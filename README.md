@@ -1,1 +1,1 @@
-# training-repository-pattern
+# training-repository-pattern-and-deployment

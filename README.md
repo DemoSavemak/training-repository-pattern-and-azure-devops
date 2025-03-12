@@ -1,6 +1,6 @@
 # Training Repository Pattern ans Deployment
 
-- [Exercise Instruction](./Exercise/README.md)
+- [Exercise Instruction](./Exercises/README.md)
 - [Lab files](./Allfiles/Labs/)
 
 ## 0. Validating your lab resources

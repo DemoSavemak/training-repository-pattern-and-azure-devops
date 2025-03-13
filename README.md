@@ -1,4 +1,4 @@
-# Training Repository Pattern ans Deployment
+# Training Repository Pattern and Azure DevOps
 
 - [Exercise Instruction](./Exercises/README.md)
 - [Lab files](./Allfiles/Labs/)

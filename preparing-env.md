@@ -10,7 +10,7 @@ Each student machine should have the following applications installed:
 2. File Explorer | Finder (MacOS)
 3. Terminal (Command Prompt or PowerShell)
 4. [Visual Studio Code](https://code.visualstudio.com/)
-5. [.NET 8 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/8.0)
+5. [.NET 6 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/6.0)
 7. Azure CLI ([Download for Windows](https://learn.microsoft.com/en-us/cli/azure/install-azure-cli-windows?tabs=azure-cli#install-or-update) | [Install for MacOS (with Homebrew)](https://learn.microsoft.com/en-us/cli/azure/install-azure-cli-macos))
 8. Git Client ([Download for Windows](https://git-scm.com/download/win) | [Install for MacOS](https://git-scm.com/download/mac))
     
@@ -50,11 +50,5 @@ Each student machine should have the following applications installed:
 ## Ensure your Azure subscription ready register and able to use follow Azure resources (Prepared by Lab host): 
 
 1. Resource group
-2. Azure Cloud Shell
-3. Azure App service
-4. Azure Functions App
-5. Azure Application Insight
-6. Azure Kubernetes Service
-7. Azure API Management
-8. Azure Cache for Redis
-9. Azure OpenAI Service
+2. Azure App service
+3. Azure Application Insight

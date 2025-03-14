@@ -1,5 +1,5 @@
 
-# Guideline to prepare hosting the workshop
+# Guideline to prepare Training
 
 
 ## 1. Installed Application 

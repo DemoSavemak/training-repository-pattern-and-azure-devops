@@ -7,7 +7,7 @@ namespace WebAPI.Repository
 {
     public class StoreRepository : GenericRepository<Store>, IStoreRepository
     {
-        public StoreRepository(FusionDBContext dbContext)
+        public StoreRepository(DBContext dbContext)
           : base(dbContext)
         {
         }

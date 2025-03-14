@@ -20,8 +20,8 @@ namespace WebAPI.Controllers
             _StoreBAL = StoreBAL;
         }
 
-        [HttpPost("GetALL")]
-        public IActionResult GetLogALL()
+        [HttpPost("GetStoreALL")]
+        public IActionResult GetStoreALL()
         {
             try
             {

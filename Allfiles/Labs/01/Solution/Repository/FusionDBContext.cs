@@ -8,9 +8,9 @@ using WebAPI.Model;
 
 namespace WebAPI.Repository
 {
-    public partial class FusionDBContext : DbContext
+    public partial class DBContext : DbContext
     {
-        public FusionDBContext(DbContextOptions options)
+        public DBContext(DbContextOptions options)
             : base(options)
         {
         }

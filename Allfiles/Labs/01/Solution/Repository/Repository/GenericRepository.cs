@@ -13,8 +13,8 @@ namespace WebAPI.Repository
     public class GenericRepository<TEntity> : IGenericRepository<TEntity>
      where TEntity : class
     {
-        private readonly FusionDBContext _dbContext;
-        public GenericRepository(FusionDBContext dbContext)
+        private readonly DBContext _dbContext;
+        public GenericRepository(DBContext dbContext)
         {
             _dbContext = dbContext;
         }

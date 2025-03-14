@@ -62,7 +62,7 @@ namespace WebAPI
             services.Configure<Appsetting>(Configuration.GetSection("AppSettings"));
 
             // Add DB connection String to DBContext
-            services.AddDbContext<FusionDBContext>(opts => opts.UseSqlServer(Configuration["AppSettings:ConnectionStrings"]));
+            services.AddDbContext<DBContext>(opts => opts.UseSqlServer(Configuration["AppSettings:ConnectionStrings"]));
 
             services.AddCors(options =>
             {

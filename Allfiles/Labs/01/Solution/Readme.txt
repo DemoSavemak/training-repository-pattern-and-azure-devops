@@ -5,4 +5,3 @@ STEP Create Master
 3. Creaet IxxRepository , XXXRepository / Copy  InewsRepository , newsRepository / Replace news with xxx
 4. Create Model (Don't forget to using common)
 5. Add Startup.cs (DI)
-6. Add Mapping Model (MappingProfiles.cs)

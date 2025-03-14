@@ -13,7 +13,5 @@ namespace WebAPI.BAL
         {
             _StoreRepository = StoreRepository;
         }
-
-
     }
 }

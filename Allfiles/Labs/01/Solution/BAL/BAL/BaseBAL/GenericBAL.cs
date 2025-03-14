@@ -25,11 +25,7 @@ namespace WebAPI.BAL
         {
             try
             {
-                 return _GenericRepository.GetByExp(predicate);  //.GetAll();
-                                                                 //return _GenericRepository.GetAll();
-
-
-                
+                 return _GenericRepository.GetByExp(predicate);
             }
             catch (Exception ex)
             {
@@ -41,7 +37,7 @@ namespace WebAPI.BAL
         {
             try
             {
-                return _GenericRepository.GetByExp(predicate).FirstOrDefault();//  .GetByExp (x => x.  Create(entity);
+                return _GenericRepository.GetByExp(predicate).FirstOrDefault();
 
             }
             catch (Exception ex)

@@ -47,8 +47,8 @@ Each student machine should have the following applications installed:
   - Ensure that Azure subscription is ready to register all Azure resources below.
 
 
-## Ensure your Azure subscription ready register and able to use follow Azure resources (Prepared by Lab host): 
+<!-- ## Ensure your Azure subscription ready register and able to use follow Azure resources (Prepared by Lab host): 
 
 1. Resource group
 2. Azure App service
-3. Azure Application Insight
+3. Azure Application Insight -->

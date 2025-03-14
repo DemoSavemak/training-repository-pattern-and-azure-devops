@@ -1,50 +1,52 @@
+# แนวทางการเตรียมการฝึกอบรม
 
-# Guideline to prepare Training
+## 1. โปรแกรมที่ต้องติดตั้ง
 
+เครื่องของผู้เรียนแต่ละคนต้องติดตั้งโปรแกรมต่อไปนี้:
 
-## 1. Installed Application 
+1. Microsoft Edge  
+2. File Explorer | Finder (MacOS)  
+3. Terminal (Command Prompt หรือ PowerShell)  
+4. [Visual Studio](https://visualstudio.microsoft.com/) หรือ [Visual Studio Code](https://code.visualstudio.com/)  
+5. [.NET 6 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/6.0)  
+6. Azure CLI ([ดาวน์โหลดสำหรับ Windows](https://learn.microsoft.com/en-us/cli/azure/install-azure-cli-windows?tabs=azure-cli#install-or-update) | [ติดตั้งสำหรับ MacOS (ผ่าน Homebrew)](https://learn.microsoft.com/en-us/cli/azure/install-azure-cli-macos))  
+7. Git Client ([ดาวน์โหลดสำหรับ Windows](https://git-scm.com/download/win) | [ติดตั้งสำหรับ MacOS](https://git-scm.com/download/mac))  
 
-Each student machine should have the following applications installed:
-
-1. Microsoft Edge
-2. File Explorer | Finder (MacOS)
-3. Terminal (Command Prompt or PowerShell)
-4. [Visual Studio](https://visualstudio.microsoft.com/) or [Visual Studio Code](https://code.visualstudio.com/)
-5. [.NET 6 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/6.0)
-6. Azure CLI ([Download for Windows](https://learn.microsoft.com/en-us/cli/azure/install-azure-cli-windows?tabs=azure-cli#install-or-update) | [Install for MacOS (with Homebrew)](https://learn.microsoft.com/en-us/cli/azure/install-azure-cli-macos))
-7. Git Client ([Download for Windows](https://git-scm.com/download/win) | [Install for MacOS](https://git-scm.com/download/mac))
-    
-    run following command, if this is the first time you install git on your machine: **(replace "your name" and "your email" with your name and email)**
+    หากนี่เป็นครั้งแรกที่คุณติดตั้ง Git บนเครื่องของคุณ ให้รันคำสั่งต่อไปนี้:  
+    **(แทนที่ "Your Name" และ "Your email" ด้วยชื่อและอีเมลของคุณ)**  
 
     ```bash
     git config --global user.name "Your Name"
     git config --global user.email "Your email"
     ```
-## 2. Proxy and firewall configuration
 
-- Please ensure that the machine does not set any proxy or firewall that block the URL or file system's permission that will be used in the workshop.
+## 2. การตั้งค่า Proxy และ Firewall
 
-## 3. Account Setup Requirement (Prepared by Lab host)
+- กรุณาตรวจสอบให้แน่ใจว่าเครื่องของคุณไม่มีการตั้งค่า Proxy หรือ Firewall ที่บล็อก URL หรือสิทธิ์การเข้าถึงไฟล์ที่ใช้ในเวิร์กชอป
 
-1. Azure DevOps Account
-  - have full permission to create project, repository, pipeline, etc.
-  - already have an organization with following setting:
-    1. **Organization Settting > Billing**: Setup billing with an Azure Subscription
+## 3. ข้อกำหนดการตั้งค่าบัญชี (จัดเตรียมโดยผู้ดูแล Lab)
 
-    ![Azure DevOps Billing](./media/devop1-set-billing.png)
+1. บัญชี Azure DevOps  
+   - ต้องมีสิทธิ์เต็มในการสร้างโปรเจกต์, รีโพสิทอรี, ไปป์ไลน์ ฯลฯ  
+   - ต้องมีองค์กรที่ตั้งค่าไว้ตามเงื่อนไขต่อไปนี้:
 
-    2. **Organization Settting > Pipeline > Settings**: Toggle the switch to Off for Disable creation of classic build pipelines and Disable creation of classic release pipelines
+     1. **การตั้งค่าองค์กร > การเรียกเก็บเงิน (Billing)**: ตั้งค่าการเรียกเก็บเงินด้วย Azure Subscription  
 
-    ![Azure DevOps Pipeline Setting](./media/devop2-set-pipeline.png)
+        ![Azure DevOps Billing](./media/devop1-set-billing.png)
 
-    3. **Organization Settting > Security > Policies**: Toggle the switch to On for Allow public projects
+     2. **การตั้งค่าองค์กร > ไปป์ไลน์ > การตั้งค่า (Pipeline > Settings)**: ปิดการสร้าง Classic Build Pipeline และ Classic Release Pipeline  
 
-    ![Azure DevOps Policy Setting](./media/devop3-set-policy.png)
+        ![Azure DevOps Pipeline Setting](./media/devop2-set-pipeline.png)
 
- 
-2. Azure Portal account with subscription
-  - Have full permission to create resources, services, etc. 
-  - Ensure that Azure subscription is ready to register all Azure resources below.
+     3. **การตั้งค่าองค์กร > ความปลอดภัย > นโยบาย (Security > Policies)**: เปิดการตั้งค่า "Allow public projects"  
+
+        ![Azure DevOps Policy Setting](./media/devop3-set-policy.png)
+
+2. บัญชี Azure Portal พร้อม Subscription  
+   - ต้องมีสิทธิ์เต็มในการสร้างทรัพยากรและบริการต่างๆ  
+   - ตรวจสอบให้แน่ใจว่า Azure Subscription พร้อมใช้งานสำหรับการลงทะเบียนทรัพยากรที่จำเป็น
+
+
 
 
 <!-- ## Ensure your Azure subscription ready register and able to use follow Azure resources (Prepared by Lab host): 
